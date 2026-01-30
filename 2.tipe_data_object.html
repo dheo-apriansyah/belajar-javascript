@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tipe data object</title>
+</head>
+<body>
+   <!-- 
+      ada 2 cara menulis property atau attribut object
+      1. menunggukana tanda petik 2 "" dan jika ingin akses property nya harus menggunakan [ ]
+   -->
+   <script>
+
+      let orang ={
+         nama_lengkap : 'Dheo Apriansyah',
+         "Alamat lengkap" : 'Bekasi',
+         usia : 29
+      }
+
+      document.writeln(`<p>Nama : ${orang.nama_lengkap}</p>`);
+      document.writeln(`<p>Alamat Lengkap : ${orang["Alamat lengkap"]}</p>`);
+      document.writeln(`<p>Usia : ${orang.usia}</p>`);
+   </script>
+
+</body>
+</html>
