@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>For loop</title>
+</head>
+<body>
+   <script>
+      for(let i = 0; i <=5; i++){
+         console.log(`i adalah ${i} * 2 = `);
+         console.log(i * 2);
+      }
+
+      let barang = ['Keyboard', 'mouse', 'laptop'];
+      for(let b = 0; b < barang.length; b++){
+         document.writeln(`<p>${barang[b]}</p>`);
+      }
+
+      for(angka = 1; angka <= 10; angka++){
+         document.writeln(`${angka}`);
+      }
+
+
+      for(a = 1; a <= 10; a++){
+        if(a % 2 === 0){
+            document.writeln(`<p>${a}</p>`);
+        }
+      }
+
+      let jml = 0;
+
+      for(let y = 1; y <= 100; y++){
+         jml = jml + y;
+      }
+
+      document.writeln(`<span>Hasil penjumlahan 1 sampai 100 : </span> ${jml}`);
+
+   </script>
+</body>
+</html>
