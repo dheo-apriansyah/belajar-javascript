@@ -1,5 +1,5 @@
 # belajar-javascript
-belajar javascript biat bisa jadi frontend
+belajar javascript biar bisa jadi frontend
 
 prompt()
 - jika pake prompt() tapi klik cancel > maka akan menghasilkan niai null
@@ -18,3 +18,11 @@ do while
 if else dan do while bisa di gunakan keduanya (contoh : Login, validasi, form)
 - do while -> untuk mengulang system login
 - if else -> untuk memberi respon login
+
+break
+- untuk menghentikan seluruh perulangan
+ - jika angka 1-5 sudah muncul, hentikan perulangan
+
+continue
+- untuk menghentikan perulangan yang sedang berjalan dan melanjutkan perulangan
+   - menampikan angka 1-5 tapi lewati angka 3
