@@ -26,3 +26,18 @@ break
 continue
 - untuk menghentikan perulangan yang sedang berjalan dan melanjutkan perulangan
    - menampikan angka 1-5 tapi lewati angka 3
+
+for in
+- untuk mengambil index atau key
+- bisa melakukan perulangan untuk array dan object
+- cocok untuk object
+
+for of
+- untuk mendapatkan nilai value langsung
+- bisa di gunakan dengan syarat hasilnya iterable
+- tidak bisa di gunakan pada object
+- cocok untuk array
+
+function()
+- function dan method sama saja
+- function bisa di panggil berkali kali
