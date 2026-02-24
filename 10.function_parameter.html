@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Function parameter</title>
+</head>
+<body>
+   <script>
+      function sapa(nama) {
+         document.writeln(`Hallo ${nama}<br>`);
+      }
+
+      sapa('Dheo');
+      sapa('Fellan');
+      
+      function tambah(a, b) {
+         document.writeln(a + b);
+      }
+
+      tambah(5, 10);
+
+      function hargaTotal(harga, jumlah) {
+         let total = harga * jumlah;
+         document.writeln(`<p>Total belanja : ${total}</p>`);
+      }
+
+      hargaTotal(10000, 2);
+   </script>
+</body>
+</html>
