@@ -41,3 +41,12 @@ for of
 function()
 - function dan method sama saja
 - function bisa di panggil berkali kali
+
+function parameter
+- parameter seperti variable
+- bisa di buat lebih dari 1
+- nama parameter tidak boleh sama
+
+funtion return dan value
+- saat menggunakan return, maka kode setelah return tidak dieksekusi lagi
+- return bisa menghentikan eksekusi function
