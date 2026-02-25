@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>default parameter</title>
+</head>
+<body>
+   <script>
+      function gym(nama, member = 'non-member') {
+         document.writeln(`<p>Nama : ${nama} ${member}</p>`);
+      }
+
+      gym('Dheo');
+      gym('Fellan', 'member');
+   </script>
+</body>
+</html>
