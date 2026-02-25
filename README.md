@@ -46,6 +46,9 @@ function parameter
 - parameter seperti variable
 - bisa di buat lebih dari 1
 - nama parameter tidak boleh sama
+- parameter di function itu opsional
+- jika kita set parameter di function dan tidak kita beri velue maka hasilnya bernilai undefined
+- jika value lebih banyak dari parameter maka tidak terjadi error / data tidak muncul
 
 funtion return dan value
 - saat menggunakan return, maka kode setelah return tidak dieksekusi lagi
