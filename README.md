@@ -5,6 +5,15 @@ prompt()
 - jika pake prompt() tapi klik cancel > maka akan menghasilkan niai null
 - jika klik oke tanpa input > maka akan menghasilkan nilai string kosong ""
 
+perbedaan == dan ===
+- == membandingkan nilai saja
+console.log(5 == '5');
+hasilnya true
+- === membandingkan nilai dan tipe data
+console.log(5 === '5');
+hasilnya false
+- di sarankan menggunakan === karena lebih aman
+
 if else
 - gunakan saat mengambil keptusan / memilih (contoh : pilihan A atau B)
 - cek kondisinya lalu menjalakan program
