@@ -62,3 +62,10 @@ function parameter
 funtion return dan value
 - saat menggunakan return, maka kode setelah return tidak dieksekusi lagi
 - return bisa menghentikan eksekusi function
+
+rest perameter
+- untuk menampung sisa paremeter menjadi satu array
+- harus menggunakan titik 3 dan harus di akhir parameter
+- hanya boleh ada 1 rest parameter dalam 1 function
+- hasilnya selalu berupa array
+- gunakan rest parameter jika tidak tahu ada berapa banyak data yang di kirim
