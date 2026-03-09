@@ -1,6 +1,15 @@
 # belajar-javascript
 belajar javascript biar bisa jadi frontend
 
+array at()
+- mengambil value array berdasarkan index
+
+Array Constructor
+- buat array kosong yang panjangnya 5 tapi value nya kosong
+- bisa buat kalender 30 hari tanpa isi angkat manual
+- bisa buat pagination (Halaman berita)
+- dari pada mengetik 1-50 di array lebih baik menggunakan array constuctor
+
 prompt()
 - jika pake prompt() tapi klik cancel > maka akan menghasilkan niai null
 - jika klik oke tanpa input > maka akan menghasilkan nilai string kosong ""
@@ -69,3 +78,8 @@ rest perameter
 - hanya boleh ada 1 rest parameter dalam 1 function
 - hasilnya selalu berupa array
 - gunakan rest parameter jika tidak tahu ada berapa banyak data yang di kirim
+
+Anonymous Function
+- function tidak memliki nama 
+- function di simpan pada variable
+- function bisa di masukan ke dalam parameter
