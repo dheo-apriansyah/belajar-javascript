@@ -27,7 +27,7 @@
       // tambah array 
       let dataSiswa = [];
       dataSiswa.push('Dheo', 17, true);
-      console.table(dataSiswa);
+      // console.table(dataSiswa);
 
       // panjang array
       document.writeln(`<p>Panjang Array ${dataSiswa.length}</p>`);
@@ -45,6 +45,35 @@
       // ubah index ke 3
       document.writeln(`Ubah index ke 3 yang di hapus : ${dataSiswa[2] = 'Lulus terbaik'}`);
       
+      // concat()
+      const data1 = ['laptop',' ram',' monitor',' mouse'];
+      const data2 = [' earphoe',' stand laptop'];
+
+      const barang = data1.concat(data2);
+      document.writeln(`<p>Gabungan 2 array : ${barang}</p>`);
+
+      // at() > ambil nilai pink
+      const warna = ['kuning', 'hijau','pink']
+      document.writeln(`<p>kuning,hijau,pink</p>`)
+      document.writeln(`<p>Ambil value dengan at() : ${warna.at(-1)}</p>`);
+
+      // array.from
+      const kata = 'GEMINI';
+      const huruf = Array.from(kata);
+      // console.log(huruf);
+
+      // Array Constructor
+      // membuat pagination (Halaman produk)
+
+      const totalProduk = 300;
+      const perHalaman = 10;
+      const jumlahHalama = totalProduk / perHalaman; // hasil nya 30
+
+      // buat array [1, 2, 3, ..., 50] untuk tombol halama
+      const daftarHalaman = Array.from({length : jumlahHalama }, (_, i) => i + 1);
+      console.log(daftarHalaman);
+      
+
    </script>
 </body>
 </html>

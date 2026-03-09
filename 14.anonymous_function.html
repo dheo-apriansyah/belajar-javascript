@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Anonymous Function</title>
+</head>
+<body>
+   <script>
+
+   // Anonymous Function yang di masukan ke dalam variable
+     const say = function(name){
+      document.writeln(`<p>Hi, ${name}</p>`)
+     }
+     say('Dheo Apriansyah');
+     say('Felan Arwati');
+
+   // Anonymous Function yang di masukan ke dalam parameter
+
+   function giveMeHello(callback){
+      callback('Dheoooo')
+   }
+
+   giveMeHello(function(hello){
+      document.writeln(`<p>Hello ${hello} </p>`)
+   });
+
+   // Latihan
+   const daftarHargaTiket = [50000, 100000, 25000];
+   const total = daftarHargaTiket.reduce(function(acc, harga){
+      return acc + harga;
+   });
+   document.writeln(`total (Reduce) : ${total}`);
+
+   // latihan 2
+   const rakBuah = [
+      {namaBuah : 'Apel', jenisBuah : 'Lokal', hargaBuah : 10000, stok :50},
+      {namaBuah : 'Semangka', jenisBuah : 'Lokal', hargaBuah : 50000, stok :5},
+      {namaBuah : 'Jeruk', jenisBuah : 'Negri', hargaBuah : 20000, stok :10},
+      {namaBuah : 'Durian', jenisBuah : 'Lokal', hargaBuah : 40000, stok :30},
+      {namaBuah : 'Pisang', jenisBuah : 'Negeri', hargaBuah : 25000, stok :50},
+      {namaBuah : 'Anggur', jenisBuah : 'Lokal', hargaBuah : 35000, stok :15}
+   ];
+   // hitung seluruh stok buah yang ada di Rak
+   const totalStokBuah = rakBuah.reduce(function(acc, stokBuah){
+      return acc + stokBuah.stok;
+   }, 0);
+   document.writeln(`<p>Jumlah stok buah yang ada di Rak : ${totalStokBuah}</p>`);
+
+   </script>
+</body>
+</html>
