@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Function di dalam Function</title>
+</head>
+<body>
+   <script>
+      // sistem keamanan saldo bank(Encapsulation)
+      function buatRekening(namaPemilik, saldoAwal){
+         // variable ini terkunci di dalam scope function buatRekening
+         let saldo = saldoAwal;
+
+         // function di dalam function(inner function) menggunakan object return
+         return {
+            cekSaldo : function(){
+               console.log(`Hallo ${namaPemilik}, saldo anda saat ini Rp${saldo}`);
+            },
+            // ini contoh cara baru membuat object return
+            setor(jumlah){
+               if(jumlah > 0){
+                  saldo += jumlah;
+                  console.log(`Berhasil setor Rp${jumlah}`);
+               }
+            },
+            // ==========================================
+            tarik : function(jumlah){
+               if(jumlah <= saldo){
+                  saldo -= jumlah;
+                  console.log(`Berhasil tarik ${jumlah}`);
+               }else{
+                  console.log("Maaf, saldo anda tidak cukup!");
+               }
+            }
+         };
+      }
+
+      const rekeningDheo = buatRekening('Dheo', 500000);
+
+      rekeningDheo.setor(10000);
+      // rekeningDheo.tarik(45000);
+      rekeningDheo.cekSaldo();
+
+
+   </script>
+</body>
+</html>
