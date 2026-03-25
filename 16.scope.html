@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Scope</title>
+</head>
+<body>
+   <script>
+
+      // variable ada di global scope
+      let counter = 0; 
+
+      // Global scope
+      function hitme(){
+         counter++;
+         // bisa akses ke variable global scope
+      }
+
+      hitme();
+      hitme();
+      console.log(counter);
+
+      // Local scope
+      function funPertama(){
+         // variable localScopePertama hanya bisa di akses di dalam function funPertama
+         let localScopePertama = 'Hello local scope pertama';
+         console.log(localScopePertama);
+      }
+
+      function funKedua(){
+         // variable localScopeKedua hanya bisa di akses di dalam function funKedua
+         let localScopeKedua = 'Hello local scope kedua';
+         console.log(localScopeKedua);
+         //console.log(localScopePertama); // error
+      }
+
+      funPertama();
+      funKedua();
+      //console.log(localScopePertama); // error
+      //console.log(localScopeKedua); // error
+
+
+      // nested scope 
+      function nestedScopePertama(){
+         let nestedPertama = 'hallo nested scope';
+
+         function nestedScopeKedua(){
+            console.log(nestedPertama);
+         }
+         nestedScopeKedua();
+      }
+      nestedScopePertama();
+      
+   </script>
+</body>
+</html>
