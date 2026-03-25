@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Menyimpan transaksi pemasukan</title>
+</head>
+<body>
+   <script>
+      // list transaksi
+      let listTransaksi = [];
+
+      // fungsi tambah data
+      function tambahTransaksi(deskripsi, nomimal, kategori){
+         let transaksiBaru = {
+            deskripsi : deskripsi,
+            nomimal : nomimal,
+            kategori : kategori // pemasukan atau pengeluaran
+         };
+         listTransaksi.push(transaksiBaru);
+         document.writeln(`<p>Berhasil menambah : ${deskripsi}</p>`);
+      }
+
+      // Fungsi melihat semua transaksi
+      function riwayat(){
+         document.writeln('<h3>Riwayat Transaksi</h3>')
+         for(let i = 0; i < listTransaksi.length; i++){
+            document.writeln(`${i + 1}. ${listTransaksi[i].deskripsi} - Rp ${listTransaksi[i].nomimal} (${listTransaksi[i].kategori})<br>`)
+         }
+      }
+
+      tambahTransaksi('Gaji Bulanan',2500000, 'Pemasukan');
+      tambahTransaksi('Bonus',500000, 'Pemasukan');
+      
+      // melihat saldo tabungan
+      const saldo = listTransaksi.reduce((acc, item )=> acc +  item.nomimal, 0);
+      riwayat();
+      document.writeln(`<h2>Saldo : ${saldo}</h2>`)
+      </script>
+</body>
+</html>
