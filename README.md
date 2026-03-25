@@ -4,6 +4,10 @@ belajar javascript biar bisa jadi frontend
 array at()
 - mengambil value array berdasarkan index
 
+length array
+- di mulai dari angka 1 bukan 0 
+- jumlah data di dalam array
+
 Array Constructor
 - buat array kosong yang panjangnya 5 tapi value nya kosong
 - bisa buat kalender 30 hari tanpa isi angkat manual
@@ -83,3 +87,8 @@ Anonymous Function
 - function tidak memliki nama 
 - function di simpan pada variable
 - function bisa di masukan ke dalam parameter
+
+Recursive Function
+- konsep function yang bisa memangil dirinya sendiri
+- harus memiki kondisi berhenti dan langkah rekursif(memangil dirinya sendiri yang lebih kecil atau mendekati base case)
+- jika ingin mengelola data yang leboh besar gunakan while atau for karena tidak banyak makan memory
