@@ -92,3 +92,9 @@ Recursive Function
 - konsep function yang bisa memangil dirinya sendiri
 - harus memiki kondisi berhenti dan langkah rekursif(memangil dirinya sendiri yang lebih kecil atau mendekati base case)
 - jika ingin mengelola data yang leboh besar gunakan while atau for karena tidak banyak makan memory
+
+Function Generator
+- untuk menjalankan kodenya perlu memanggil .next()
+- menghasilkan nilai saat di butuhkan
+- bisa menggunakan for..of
+- yeild memberikan nilai dan "istirahat" sedangkan return memberi nilai dan mengakhiri fungsi
