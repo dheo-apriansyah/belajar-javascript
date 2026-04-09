@@ -98,3 +98,7 @@ Function Generator
 - menghasilkan nilai saat di butuhkan
 - bisa menggunakan for..of
 - yeild memberikan nilai dan "istirahat" sedangkan return memberi nilai dan mengakhiri fungsi
+
+Arrow function
+- di gunakan fungsi 1x
+- jangan di gunakan untuk object method
