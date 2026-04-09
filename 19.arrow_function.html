@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Belajar Arrow Function</title>
+</head>
+<body>
+   <script>
+      // function biasa
+      function tambah(a, b){
+         return a + b;
+      }
+
+      // arrow function
+      const kurang = (c, d) => {
+         return c - d;
+      }
+
+      // arrow function dengan return
+      const funHallo = nama => console.log(`Hallo, ${nama}`);
+
+      funHallo('dheo');
+      const hasilTambah = tambah(2,4);
+      console.log(hasilTambah);
+      console.log(kurang(10,5));
+   </script>
+</body>
+</html>
