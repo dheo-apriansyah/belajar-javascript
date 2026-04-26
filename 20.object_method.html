@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cara membuat Object Method</title>
+</head>
+<body>
+   <script>
+      // buat function di dalam object
+      const person = {
+         nama : 'Dheo',
+         // masukan anonymouns function
+         sayHallo : function (nama){
+            alert(`Hallo ${nama}`);
+         }
+      };
+
+      // tambah function ke dalam object 
+      const mobil= {
+         warna : 'Hitam'
+      }
+
+      // untuk akses properti di dalam object mobil harus menggunakan kata this. di dalam object
+      mobil.bergerak = function(cepat,){
+         document.writeln(`Mobil warna ${this.warna} melaju dengan ${cepat}`)
+      }
+
+      // panggil funtion
+      // person.sayHallo('Felan');
+      mobil.bergerak('cepat');
+
+      
+
+
+   </script>
+</body>
+</html>
