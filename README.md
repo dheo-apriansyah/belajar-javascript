@@ -102,3 +102,9 @@ Function Generator
 Arrow function
 - di gunakan fungsi 1x
 - jangan di gunakan untuk object method
+
+obejct method
+- menjaga code agar tetap rapih
+- method di dalam object >> code jadi lebih terstruktur
+- jika ingin akses property di dalam object, gunakan kata this. di method nya
+- jika Properti "kata benda" maka Method adalah "Kata kerja"
