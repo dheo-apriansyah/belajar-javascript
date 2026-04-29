@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Kata Kunci this</title>
+</head>
+<body>
+   <script>
+      const tugasPegawai = {
+         namaTim : 'Tim CS',
+         daftarTugas : ['Terima komplen', 'Buat tiket', 'Close tiket'],
+
+         // 1. function untuk menampilkan nama tim( this dalam method)
+         tampikanDaftarTugas : function(){
+            document.write(`<h3> === Daftar Tugas ${this.namaTim} === </h3>`);
+         },
+
+         // 2. function tampikan tugas
+         // masalah this dan solusi dengan arrow function
+         tampikanTugas : function(){
+            this.daftarTugas.forEach((tugas, index) =>{
+               document.write(`<p>${index + 1}. ${tugas} (Dikerjakan oleh : ${this.namaTim})</p>`);
+            })
+         },
+
+         // 3.function tambah tugas baru
+         tambahTugasBaru : function(tugasBaru){
+            this.daftarTugas.push(tugasBaru);
+            document.write(`Tugas "${tugasBaru}" berhasil ditambahkan ke ${this.namaTim}`);
+         }
+      }
+
+      // esekusi
+      tugasPegawai.tampikanDaftarTugas();
+      tugasPegawai.tampikanTugas();
+      document.write(`<h3>Tambah tugas</h3>`)
+      tugasPegawai.tambahTugasBaru('Update tiket');
+      
+      // pinjam method (Explicit Binding)
+      const timDeveloper = {
+         namaTim : 'Tim Developer',
+         daftarTugas :[]
+      };
+      tugasPegawai.tambahTugasBaru.call(timDeveloper, 'Migrasi Database');
+      document.write(`<p> Tugas ${timDeveloper.namaTim} : ${timDeveloper.daftarTugas}</p>`);
+   </script>
+</body>
+</html>
