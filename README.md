@@ -108,3 +108,8 @@ obejct method
 - method di dalam object >> code jadi lebih terstruktur
 - jika ingin akses property di dalam object, gunakan kata this. di method nya
 - jika Properti "kata benda" maka Method adalah "Kata kerja"
+
+kata kunci this
+- kata kunci refresi yang menunjuk ke sebuah object
+- gunakan kata kunci this saat sebuah function( yang ada di dalam object) ingin mengakses property object
+- jika menggunakan fungsi biasa, this dalam forEach akan menjadi undefined / window
