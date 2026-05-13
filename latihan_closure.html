@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Belajar Closure</title>
+</head>
+<body>
+   <script>
+      // Sistem Dompet Digital E-Wallet
+
+      function createWallet(owner, initialBalance){
+         // ini closure scope
+         // variable ini tidak bisa di akses dari luar
+         let balance = initialBalance;
+         let ownerName = owner;
+
+         return{
+            deposit : function(amount){
+               if(amount > 0){
+                  balance += amount;
+                  console.log(`[${ownerName}] Top up berhasil : +Rp${amount}`)
+               }
+            },
+            withdraw : function(amount){
+               if(amount > balance){
+                  console.log(`[${ownerName}] Gagal : Saldo anda tidak cukup! (saldo ${balance})`)
+               } else {
+                  balance -= amount;
+                  console.log(`[${ownerName}] Tarik tunai : -Rp${amount}`);
+               }
+            },
+            checkBalance : function(){
+               return `Saldo saat ini : Rp:${balance}`;
+            }
+         };
+      }
+
+      // Pengguna
+      const dompetDheo = createWallet("Dheo", 500000);
+      // dompetDheo.withdraw(1000000);
+      console.log(dompetDheo.checkBalance());
+
+   </script>
+</body>
+</html>
