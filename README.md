@@ -113,3 +113,21 @@ kata kunci this
 - kata kunci refresi yang menunjuk ke sebuah object
 - gunakan kata kunci this saat sebuah function( yang ada di dalam object) ingin mengakses property object
 - jika menggunakan fungsi biasa, this dalam forEach akan menjadi undefined / window
+- kata kunci this di anonymous functon mengacunya di nama object
+
+arrow function di Object
+- jika kita ingin mengakses object menggunakan kata kunci this, maka mengacunya ke window (yang paling tinggi)
+- bisa di gunakan sebagai object method
+- tidak bisa akses arguments object, function generator, kata kunci this dan kata kunci super
+- gunakan saat kita tidak butuh fitur di atas (akses arguments object, function generator, kata kunci this dan kata kunci super)
+
+implicit return (pengembalian otomatis)
+- dalam arrow function sebuah nilai bisa di return otomatis tanap menulis kata kunci return dan kurung kurawal {}
+- contoh
+sebelum : 
+const kaliDua = (angka) => {
+  return angka * 2;
+};
+sesudah : 
+const kaliDua = (angka) => angka * 2;
+

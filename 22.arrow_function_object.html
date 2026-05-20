@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Arrow Function Object</title>
+</head>
+<body>
+   <script>
+
+      // const person = {
+      //    name : 'Dheo',
+      //    sayHello : (name) => {
+      //       console.log(this) // ini dapatnya Window
+      //       document.write(`Hello ${name}`);
+      //    }
+      // };
+      // person.sayHello('Felan');
+
+      // =Simulasi keranjang belanja=
+
+      const shoppingCart = {
+         namaStore : 'Toko Dheo',
+         items :[
+            {name : "Laptop", price : 15000000},
+            {name : "Mouse Wireless", price : 250000},
+            {name : "Kyeboard Mechanical", price : 450000}
+         ],
+
+         // 1. Reguler function, Arrow function untuk callback
+         printReceipt : function(){
+            document.write(`<h3>**Struk belanja dari ${this.namaStore}**</h3>`);
+            let total = 0;
+
+            this.items.forEach((item, index) =>{
+               total += item.price;
+               document.write(`<p>${index + 1}. ${item.name} - Rp${item.price.toLocaleString("id-ID")} (dari ${this.namaStore})</p>`);
+            });
+
+            document.write(`<h4>Total Belanja : Rp${total.toLocaleString("id-ID")}</h4>`);
+         },
+
+         // 2. kesalahan menggunakan this pada arrow function obejct
+         printStoreInfo : () =>{
+            //  ini mengarah ke global scope, bukan ke shoppingCart
+            console.log(`Nama Store : ${this.namaStore}`);
+         },
+
+         // 3. trik sintak : arrow function dengan implicit return dan object destructuring
+         // membungkus object dengan tanda kurung () agar tidak di anggap sebagai blok kode
+         //  saat me return object menggunakan implicit return ,javascrip mengira kurung kurawal adalah blok pembuka fungsi, jadi kita "mengakali" object dengan kurung biasa ()
+
+         applyDiscount : (discountPercentage) => ({
+            message : `Diskon ${discountPercentage}% berhasil diterpakan!`,
+            timestamp : new Date().toLocaleDateString(),
+            isvalid : true
+         })
+      };
+
+      shoppingCart.printReceipt()
+      shoppingCart.printStoreInfo();
+      const discountStatus = shoppingCart.applyDiscount(10);
+      // alert(discountStatus.message)
+      console.log(discountStatus)
+   </script>
+</body>
+</html> 
