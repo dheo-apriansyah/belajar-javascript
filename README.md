@@ -136,3 +136,12 @@ Getter dan setter
 - set : menggubah nilai, periksa data apakah valid dan aman
 - tanpa getter dan setter user bisa input data asal asalan
 - biasa nya programmer menggunakan tanda _ untuk property bersifat private dan tidak boleh di akses langsung dari luar
+
+Destructuring
+- untuk mengambil data dari array atau object tanpa melakukan pengambilan data satu persatu
+- membongkar value array atau object ke dalama varibale baru
+- jika mau ambil data satu persatu gunakan destructuring
+- kalau ingin ambil data di dalam OBJECT nama property nya harus sama
+- bisa di gunakan pada function parameter
+- bisa menambahkan default value jika tidak ada datanya
+- destructuring di array nama variable bisa di rubah sesuka kita

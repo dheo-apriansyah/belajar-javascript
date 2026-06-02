@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Destructuring</title>
+</head>
+<body>
+   <script>
+      // Destructuring Array
+      const pegawai = ['Dheo', 'Felan', 'Momo', 'Moly', 'Belang'];
+      const [pegawai1, pegawai2, pegawai3, ...other] = pegawai;
+
+      console.info(pegawai1);
+      console.info(pegawai2);
+      console.info(pegawai3);
+      console.info(other);
+
+
+      // Destructuring Object
+      const barang = {
+         namaBarang : 'Tv',
+         stock : 3,
+         spesifikasi : {
+            warna : 'hitam',
+            listrik : '50 watt',
+            panel : 'led'
+         },
+         harga : 1000000
+      }
+      
+      const {namaBarang, spesifikasi : {warna}} = barang;
+      console.log(namaBarang);
+      console.log(warna);
+
+      // Destructuring Function parameter
+      function karakter({serang, bertahan, lari}){
+         console.log(serang);
+         console.log(bertahan);
+         console.log(lari);
+      }
+
+      const hero = {
+         serang : 'Attack!',
+         bertahan : 'Defend',
+         lari : 'Kabur!'
+      }
+
+      karakter(hero);
+
+      // Default value Destructuring
+      const orang = {
+         nama : 'Hero',
+         role : 'Mage',
+         stamina : 0
+      }
+      const {nama, role, stamina, namakarakter = 'Default name'} = orang;
+      console.log(`Status :  ${nama}`)
+      console.log(`Role : ${role}`);
+      console.log(`Nickname : ${namakarakter}`);
+
+
+      // Destructuring Variable lain
+      const myHero = {
+            nama:'Hero',
+            role: 'Mage',
+            stamina: 0
+         }
+         const { 
+            nama : namaHero, 
+            role : RoleHero, 
+            stamina : StaminaHero, 
+            namaKarakter = 'Default name' 
+         } = myHero;
+         console.log(`Status :  ${namaHero}`)
+         console.log(`Stamina :  ${StaminaHero}`)
+         console.log(`Role : ${RoleHero}`);
+         console.log(`Nickname : ${namakarakter}`);
+   </script>
+</body>
+</html>
