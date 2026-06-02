@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Getter and Setter</title>
+</head>
+<body>
+   <script>
+      const person = {
+         nama_depan : 'Dheo',
+         nama_belakang : 'apriansyah',
+         // Getter
+         get nama_lengkap(){
+            return `${this.nama_depan} ${this.nama_belakang}`;
+         },
+
+         set nama_lengkap(value){
+            const array = value.split(" "); // cari spasi dalam string dan ubah menjadi array
+            this.nama_depan = array[0]; // element pertama masuk
+            this.nama_belakang = array[1]; // elemet kedua masuk
+         }
+      }
+
+      person.nama_lengkap = 'Fellan Apriansyah'; // masuk ke dalam fungsi set nama_lengkap(value)
+      console.log(person);
+   </script>
+</body>
+</html>

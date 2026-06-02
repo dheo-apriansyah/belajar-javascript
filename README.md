@@ -131,3 +131,8 @@ const kaliDua = (angka) => {
 sesudah : 
 const kaliDua = (angka) => angka * 2;
 
+Getter dan setter
+- get: menggambil nilai, bisa menggubah dan memformat data sebelum di berikan ke kita
+- set : menggubah nilai, periksa data apakah valid dan aman
+- tanpa getter dan setter user bisa input data asal asalan
+- biasa nya programmer menggunakan tanda _ untuk property bersifat private dan tidak boleh di akses langsung dari luar
