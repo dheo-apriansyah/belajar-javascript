@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Strict mode</title>
+</head>
+<body>
+   <script>
+      function useStrictMode(){
+         'use strict' // <= akan memunculkan error
+         const orang = {
+            nama : " dheo"
+         };
+         with (orang){
+            console.info(nama);
+         }
+      }
+      useStrictMode();
+   </script>
+</body>
+</html>

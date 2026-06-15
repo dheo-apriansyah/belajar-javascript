@@ -145,3 +145,7 @@ Destructuring
 - bisa di gunakan pada function parameter
 - bisa menambahkan default value jika tidak ada datanya
 - destructuring di array nama variable bisa di rubah sesuka kita
+
+Strict mode
+- memperbaiki perintah / code yang tidak di rekomendasikan lagi oleh javascript
+- beberapa perintah / code tersebut akan di blokir oleh javascript atau di jadikan error
