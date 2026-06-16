@@ -149,3 +149,15 @@ Destructuring
 Strict mode
 - memperbaiki perintah / code yang tidak di rekomendasikan lagi oleh javascript
 - beberapa perintah / code tersebut akan di blokir oleh javascript atau di jadikan error
+
+OOP (Object Oriented Programming)
+- object : data berisi field, properties, attributes dan method, function / behavior
+- class : blueprint cetakan atau prototype
+
+Membuat Constructor Function :
+- harus di awalin huruf besar
+- function Person(){}, MemeberPrenium(){} << ini constructor function
+- function person(){} << ini function biasa
+
+Membuat Object dari constructor function :
+- setelah membuat calss gunakan kata kunci new dan di ikuti nama constructor function
