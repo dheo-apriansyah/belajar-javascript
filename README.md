@@ -161,3 +161,4 @@ Membuat Constructor Function :
 
 Membuat Object dari constructor function :
 - setelah membuat calss gunakan kata kunci new dan di ikuti nama constructor function
+- gunakan this untuk menambahkan property

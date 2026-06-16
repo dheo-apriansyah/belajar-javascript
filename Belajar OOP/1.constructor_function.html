@@ -7,20 +7,34 @@
 </head>
 <body>
    <script>
+      // ini constructor function
       function Person(){
-         // ini constructor function
+      // tambahkan property 
+      this.namaDepan = "";
+      this.namaBelakang = "";
+      this.wni = "Indonesia";
+      this.note = "Belum di update";
+  
       }
-      function MemberPerson(){
-         // ini constructor function
-      }
+      function MemberPerson(){}
 
+      // ini function biasa
       function person(){
-         // ini function biasa
+         
       }
 
       // object nya di constructor function : 
       const dheo = new Person();
-      const fellan = new Person();
+      dheo.namaDepan = "Dheo";
+      dheo.namaBelakang = "Apriansyah";
+      dheo.note = "Sudah di update";
+      console.log(dheo);
+
+      const felan = new Person();
+      felan.namaDepan = "felan";
+      felan.namaBelakang = "Arwati";
+      felan.note = "Data baru";
+      console.log(felan)
    </script>
 </body>
 </html>
