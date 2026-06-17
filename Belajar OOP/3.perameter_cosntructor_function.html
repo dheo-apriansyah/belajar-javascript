@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Parameter constructor function</title>
+</head>
+<body>
+   <script>
+      // tambahkan parameter nama dan devisi
+      function Karyawan(nama, devisi){
+         this.nama = nama; // << masukan data dari parameter ke dalam property object
+         this.devisi = devisi;
+         this.status = 'Aktif';
+      }
+
+      // jika parameternya banyak, solusinya bungkus parameter dengan Object {}
+      function Kendaraan({merek, warna, maxKecepatan, tahunProduksi, jenisBahanBakar}){
+         this.merek = merek;
+         this.warna = warna;
+         this.maxKecepatan = maxKecepatan;
+         this.tahunProduksi = tahunProduksi;
+         this.jenisBahanBakar = jenisBahanBakar;
+      }
+
+
+
+      // masukan argumen nya
+      const dheo = new Karyawan('Dheo','Agen');
+
+      // Kendaraan
+      const Toyota = new Kendaraan({
+         merek : 'MPV',
+         warna : 'Hitam',
+         maxKecepatan : 200,
+         tahunProduksi : 2025,
+         jenisBahanBakar : 'Ron 95',
+      });
+      console.log(Toyota);
+      console.log(dheo);
+   </script>
+</body>
+</html>

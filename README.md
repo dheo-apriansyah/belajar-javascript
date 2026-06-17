@@ -162,3 +162,8 @@ Membuat Constructor Function :
 Membuat Object dari constructor function :
 - setelah membuat calss gunakan kata kunci new dan di ikuti nama constructor function
 - gunakan this untuk menambahkan property
+
+parameter constructor function :
+- variable penampung yang di taru di function ()
+- aturan penamaan paramter tidak harus sama dengan nama property setelah kata this.
+- jika argumen kurang makan akan otomatis bernilai undefined
