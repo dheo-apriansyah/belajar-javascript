@@ -167,3 +167,8 @@ parameter constructor function :
 - variable penampung yang di taru di function ()
 - aturan penamaan paramter tidak harus sama dengan nama property setelah kata this.
 - jika argumen kurang makan akan otomatis bernilai undefined
+
+belajar constructor inheritance
+- constrtructor inheritance (anak/child) mewarisi property dan method dari induk nya
+- gunakan fungsi call() untuk mewarisi fungsu dari parent nya
+- tambahan argumen wajib this di dalam parameter anak dan di ikuti parameter dari induknya

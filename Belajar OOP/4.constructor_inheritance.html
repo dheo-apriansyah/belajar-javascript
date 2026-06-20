@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Constructor Inheritance</title>
+</head>
+<body>
+   <script>
+      // constructor induk
+      function Employee(firstname){
+         this.firstname = firstname;
+         this.sayHello = function(name){
+            console.info(`Hello ${name}, My name is ${this.firstname}`);
+         }
+      }
+
+      // constructor anak
+      function Manager(firstname, lastname){
+         this.lastname = lastname;
+         // warisan dari property Employee
+         Employee.call(this, firstname);
+      }
+
+      const print = new Manager('felan', 'apriansyah');
+      console.info(print);
+
+   </script>
+</body>
+</html>
