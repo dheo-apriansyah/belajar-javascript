@@ -172,3 +172,8 @@ belajar constructor inheritance
 - constrtructor inheritance (anak/child) mewarisi property dan method dari induk nya
 - gunakan fungsi call() untuk mewarisi fungsu dari parent nya
 - tambahan argumen wajib this di dalam parameter anak dan di ikuti parameter dari induknya
+
+belajar prototype
+- berfungsi untuk memeberikan atau berbagi method / property yang bisa di pakai bersama oleh banyak object
+- gunakan prototype ketika kita punya banyak object dan meliki fungsi / method yang sama
+- prototype akan menambah ke prototype objectnya, bukan di instance object( (class atau constructor function))

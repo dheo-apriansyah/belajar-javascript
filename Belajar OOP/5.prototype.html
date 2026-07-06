@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Prototype</title>
+</head>
+<body>
+   <script>
+      // buat constructor function
+      function Hero(nama, skill){
+         this.nama = nama;
+         this.skill = skill;
+      }
+
+      Hero.prototype.serang = function serang() {
+         return `${this.nama} menggunakan ${this.skill}!`
+      };
+
+      const hero1 = new Hero("Gatot Kaca", "Tinju Guntur");
+      const hero2 = new Hero("Srikandi", "Panah Sakti");
+
+      console.log(hero1.serang());
+      console.log(hero2.serang());
+   </script>
+</body>
+</html>
