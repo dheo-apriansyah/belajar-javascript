@@ -177,3 +177,4 @@ belajar prototype
 - berfungsi untuk memeberikan atau berbagi method / property yang bisa di pakai bersama oleh banyak object
 - gunakan prototype ketika kita punya banyak object dan meliki fungsi / method yang sama
 - prototype akan menambah ke prototype objectnya, bukan di instance object( (class atau constructor function))
+- prototype selalu memiliki turunan (turunan object prototype)
