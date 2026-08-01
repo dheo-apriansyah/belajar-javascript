@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Class OOP</title>
+</head>
+<body>
+   <script>
+     class Hero{
+      constructor(nama, health){
+         this.nama = nama;
+         this.health = health;
+      }
+
+      attack(){
+         console.log(`${this.nama} menyerang!`);
+      }
+
+      takeDamge(damage){
+         this.health -= damage;
+         console.log(`${this.nama} terkena damage ${damage}. sisa HP: ${this.health}`)
+      }
+     }
+
+     const hero1 = new Hero('Miya', 100);
+     const hero2 = new Hero('Layla', 100);
+
+     hero1.attack();
+     hero2.takeDamge(20);
+   </script>
+</body>
+</html>

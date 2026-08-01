@@ -178,3 +178,19 @@ belajar prototype
 - gunakan prototype ketika kita punya banyak object dan meliki fungsi / method yang sama
 - prototype akan menambah ke prototype objectnya, bukan di instance object( (class atau constructor function))
 - prototype selalu memiliki turunan (turunan object prototype)
+
+constructor class
+- untuk membuat dan menginisialisasi Object baru
+- constructor class => cetakan atau template 
+- object => hasil dari cetakan
+- ibarat : class cetakan kue, constructor adalah proses menuangkan adonan kosong dan menuntukan varian rasa
+- panggil class dengan kata kunci this (javascript otomatis menjalankan fungsi constructor())
+- Syarat  : 1. Hanya ada satu di dalam clas
+            2. opsional => jika tidak di buat, JS akan otomatis menyediakan tapi secara tersembunyi
+            3. kata kunci this digunakan saat menetapkan properti / variable ke dalam object yang sedang di buat
+- biasanya constructor dibuat bersama dengan method. constructor + method
+- class => bluepring atau cetakan object 
+- constructor() => method otomatis yang di panggil saat new di gunakan
+- new => membuat object baru dari class
+- this => mengacu ke object yang sedang di buat
+- method => Fungsi yang di miliki method

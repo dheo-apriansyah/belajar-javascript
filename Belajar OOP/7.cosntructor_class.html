@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Constructor class</title>
+</head>
+<body>
+   <style>
+      body{
+         background-color: black;
+      }
+   </style>
+   <script>
+
+      // Blueprint mahasiswa
+      class Mahasiswa{
+         constructor(nama, umur){
+            this.nama = nama; // this menunjuk object yang di buat
+            this.umur = umur;
+         }
+      }
+
+      // buat objectnya
+      const mhs1 = new Mahasiswa('dheo', 29);
+      const mhs2 = new Mahasiswa('felan', 22);
+
+
+      // constructor + method
+      class Mobil{
+         constructor(merek){
+            this.merek = merek;
+         }
+
+         bergerakMaju(){
+            console.log(`Mobil ${this.merek} bergerak maju`)
+         }
+      }
+
+      // untuk blueprint Mobil
+      const mobil1 = new Mobil('Ferrari');
+      mobil1.bergerakMaju();
+
+      // untuk blueprint Mahasiswa
+      console.log(mhs1);
+
+   </script>
+</body>
+</html>
