@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Method di Class</title>
+</head>
+<body>
+   <script>
+     class Orang{ // ini template atau blueprint
+      constructor(name){
+         this.nama_lengkap = name
+      }
+
+      sayHallo(namaOrang){
+         console.log(`Hallo ${namaOrang}, nama saya ${this.nama_lengkap}`)
+      }
+     }
+
+     class Hero{
+      constructor(nama, role, skill){
+         this.nama_hero = nama;
+         this.role_hero = role;
+         this.skill_hero = skill;
+      }
+
+      serangHero(heroLawan){
+         // heroLawan.nama_hero mengambil properti nama dari objek
+         console.log(`${this.nama_hero} serang hero ${heroLawan.nama_hero} dengan skill ${this.skill_hero}`);
+      }
+     }
+
+   //   ini object Hero
+      const eudora = new Hero('Eudora', 'Mage','petir');
+      const lapuLapu = new Hero('Lapu lapu', 'Fighter', 'Justice Blade')
+      console.log(eudora);
+      eudora.serangHero(lapuLapu);
+      lapuLapu.serangHero(eudora);
+
+      
+
+
+   //   ini object Orang
+     const dheo = new Orang('Dheo Apriansyah'); // nama diri kita 
+     console.log(dheo); // cek apakah nama kita sudah benar
+     dheo.sayHallo('fellan'); // jalan kan method untuk say hallo ke fellan
+
+   </script>
+</body>
+</html>

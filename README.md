@@ -194,3 +194,6 @@ constructor class
 - new => membuat object baru dari class
 - this => mengacu ke object yang sedang di buat
 - method => Fungsi yang di miliki method
+
+Method di class
+- tambahkan method di prototype
