@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+     class Pegawai{
+      sayHello(nama){
+         console.log(`Hello ${nama}! nama saya ${this.name} `)
+      }
+     }
+
+     class PegawaiBaru extends Pegawai{
+      sayHello(name){
+         console.log(`Hallo juga ${name}! saya ${this.name}, pegawai baru`)
+      }
+     }
+
+     const dheo = new Pegawai();
+     dheo.name= 'Dheo Apriansyah';
+     dheo.sayHello('Felan');
+
+     const fellan = new PegawaiBaru();
+      fellan.name = 'Felan';
+      fellan.sayHello('dheo');
+
+      console.log(dheo)
+      console.log(fellan)
+   </script>
+</body>
+</html>
