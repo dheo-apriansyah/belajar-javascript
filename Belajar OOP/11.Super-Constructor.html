@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Super-Constructor</title>
+</head>
+<body>
+   <script>
+      class Hero{
+         constructor(firstName){
+            this.firstName = firstName;
+         }
+         attackHero(enemyHero){
+            console.info(`Hello ${enemyHero}, i ${this.firstName}.. Are you ready? `);
+         }
+      }
+
+      class Mage extends Hero{
+         constructor(firstName, lastname){
+            super(firstName);
+            this.lastname = lastname;
+         }
+
+         attackHero(name){
+            console.info(`Hello ${name}, i ${this.firstName}`)
+         }
+      }
+
+      const sage = new Hero('Sage');
+      sage.attackHero('Jett');
+
+      const jett = new Mage('Jett');
+      jett.attackHero('Sage');
+   </script>
+</body>
+</html>
