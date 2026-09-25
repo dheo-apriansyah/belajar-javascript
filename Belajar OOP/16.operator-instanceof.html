@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Operator Instaceof</title>
+</head>
+<body>
+   <script>
+      //  operator untuk menggecek apakah menggunakan class tertentu atau tidak
+      // Operator yang menggembalikan nilai boolean
+      // instanceof ==> memeriksa hubungan hirarki/prototype dari sebuah Object
+      //
+
+      class User{
+         constructor(name){this.name = name;}
+      }
+      class Company{
+         constructor(companyName){this.companyName = companyName; }
+      }
+
+      function kirimNotifikasi(penerima, pesan){
+         if(penerima instanceof User){
+            console.log(`Mengirim email pribadi ke ${penerima.name} : ${pesan}`)
+         } 
+         else if (penerima instanceof Company) {
+            console.log(`Mengirim pemberitahuan ke perusahaan ${penerima.companyName} : ${pesan}`)
+         }else{
+            throw new Error("Pesan tidak valid");
+         }
+      }
+
+      const user = new User("Dheo");
+      const company = new Company("PT Indah Karya");
+
+      kirimNotifikasi(user, "Halo anak baru");
+      kirimNotifikasi(company,"Bayar pajak sekarang");
+   </script>
+</body>
+</html>
