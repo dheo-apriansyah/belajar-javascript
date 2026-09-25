@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Static field</title>
+</head>
+<body>
+   <!-- 
+   - static field >> menyimpan nilai yang konstant dan komigurasi global
+   - nilai bersifat tetap dan di pakai secara umum tanpa perlu membuat object
+   - bisa menyimpan cache data
+   -->
+   <script>
+      class Hero{
+         // static field
+         static name = "Sage";
+         static role = "Support";
+      }
+
+      // mengakses static field langsung lewat class nya 
+      Hero.name = "Iso";
+   
+      console.info(Hero.name);
+   </script>
+</body>
+</html>
